@@ -15,6 +15,26 @@
 <body>
     <!--main-->
     <div class="main">
+        <aside class="sidebar">
+            <img class="imag1" src="img/2023-08-20_16-53.png" alt="user foto">
+            <img class="imag2" src="img/2023-08-20_17-00.png" alt="user foto">
+            <!--contact-->
+            <div class="contact">
+                <h3 class="sidebar-title">Contacts</h3>
+                <div>
+                    <p>
+                        <span class="contact-type">C</span>
+                        <a href="tel:C:000000000 " class="contact-link">C:+0909090</a>
+                    </p>
+                    <p>
+                        <span class="contact-type">E</span>
+                        <a href="mail:test@gmail.com" class="contact-link">E:test@gmail.com</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </aside>
         <!--main content-->
         <div class="main_content">
             <!--abaut user-->
@@ -89,41 +109,22 @@
                     </ul>
                 </div>
                 <!--button-->
-                <button class="button" type="button" onclick="showPhoto()">Click Me!</button>
-                <img class=" hidden" src="img/2023-08-21_14-41.png" alt="Your Photo" id="photo">
+                <button class="button" type="button" onclick="togglePhoto()">Click Me!</button>
+                <img class="hidden" src="img/2023-08-21_14-41.png" alt="Your Photo" id="photo">
 
+                <script>
+                    function togglePhoto() {
+                        const photo = document.getElementById('photo');
+                        if (photo.style.display === 'none' || photo.style.display === '') {
+                            photo.style.display = 'block';
+                        } else {
+                            photo.style.display = 'none';
+                        }
+                    }
+                </script>
             </div>
-
-            <script>
-                function showPhoto() {
-                    const photo = document.getElementById('photo');
-                    photo.classList.remove('hidden');
-                }
-            </script>
 
         </div>
-        <!--sidebar-->
-        <aside class="sidebar">
-            <img class="imag1" src="img/2023-08-20_16-53.png" alt="user foto">
-            <img class="imag2" src="img/2023-08-20_17-00.png" alt="user foto">
-            <!--contact-->
-            <div class="contact">
-                <h3 class="sidebar-title">Contacts</h3>
-                <div>
-                    <p>
-                        <span class="contact-type">C</span>
-                        <a href="tel:C:000000000 " class="contact-link">C:+0909090</a>
-                    </p>
-                    <p>
-                        <span class="contact-type">E</span>
-                        <a href="mail:test@gmail.com" class="contact-link">E:test@gmail.com</a>
-                    </p>
-
-                </div>
-            </div>
-
-        </aside>
-    </div>
 
 
 </body>
