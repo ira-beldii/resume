@@ -88,7 +88,19 @@
                         <li>Koltovich all photos</li>
                     </ul>
                 </div>
+                <!--button-->
+                <button class="button" type="button" onclick="showPhoto()">Click Me!</button>
+                <img class=" hidden" src="img/2023-08-21_14-41.png" alt="Your Photo" id="photo">
+
             </div>
+
+            <script>
+                function showPhoto() {
+                    const photo = document.getElementById('photo');
+                    photo.classList.remove('hidden');
+                }
+            </script>
+
         </div>
         <!--sidebar-->
         <aside class="sidebar">
@@ -112,6 +124,8 @@
 
         </aside>
     </div>
+
+
 </body>
 
 </html>
