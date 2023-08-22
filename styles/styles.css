@@ -111,9 +111,10 @@ body {
 
 
 .dropdown {
-    padding: 10px;
-    padding-right: 50px;
-    color: #cf1414
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .dropdown-menu {
